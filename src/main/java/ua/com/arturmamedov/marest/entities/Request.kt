@@ -5,7 +5,7 @@ data class Request(
     var method:String,
     var url:String,
     var bodyType:HttpBodyType,
-    var body:RequestBody,
+    var body: String,
     var headers:Map<String,String>,
     var queryParams:Map<String,String>
 );
