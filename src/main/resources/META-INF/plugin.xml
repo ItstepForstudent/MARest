@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>ua.com.arturmamedov.MARest</id>
+    <name>MARest</name>
+    <version>0.0.9</version>
+    <vendor url="https://github.com/ItstepForstudent">Artur Mamedov</vendor>
+    <description><![CDATA[
+        <h1><b>MARest Plugin</b></h1>
+        <br/>
+        <em> Rest client for IDE</em>
+        <br/>
+        Links:
+        <a href="https://github.com/ItstepForstudent/MARest.git" target="_blank">GitHub</a>
+    ]]></description>
+
+
+    <depends>com.intellij.modules.lang</depends>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="MARest" anchor="bottom" factoryClass="ua.com.arturmamedov.marest.ui.RestToolPanelFactory"/>
+        <applicationService serviceImplementation="ua.com.arturmamedov.marest.service.RestService"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
